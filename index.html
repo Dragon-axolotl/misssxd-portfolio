@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>misssXD's Portfolio</title>
+    <!-- Подключаем красивые шрифты: Playfair Display (для заголовков) и Inter (для текста) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Свечение на фоне -->
+    <div class="bg-glow bg-glow--1"></div>
+    <div class="bg-glow bg-glow--2"></div>
+
+    <!-- ХЕДЕР (Стеклянный) -->
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">misssXD</a>
+            
+            <!-- Меню-фильтры -->
+            <nav class="header__nav">
+                <ul class="header__list" id="filter-list">
+                    <li class="header__item"><button class="header__link active" data-filter="all">All</button></li>
+                    <li class="header__item"><button class="header__link" data-filter="gacha">Gacha</button></li>
+                    <li class="header__item"><button class="header__link" data-filter="telegram">Telegram</button></li>
+                    <li class="header__item"><button class="header__link" data-filter="art">Art</button></li>
+                </ul>
+            </nav>
+
+            <!-- Переключатель темы -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                <span class="theme-toggle__icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <main class="main">
+        <section class="hero">
+            <div class="hero__container fade-in">
+                <p class="hero__subtitle">Digital Artist • Gacha Creator • Web Developer • TG Designer</p>
+                <h1 class="hero__title">misssXD's<br><span class="hero__title-span">portfolio</span></h1>
+            </div>
+        </section>
+
+        <!-- ГАЛЕРЕЯ -->
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio__container">
+
+                <!-- РЯД 1: Фото слева, Текст справа -->
+                <div class="row fade-in" data-category="gacha">
+                    <div class="row__images">
+                        <div class="row__img-wrapper">
+                            <img src="https://via.placeholder.com/400x500/122646/a3d5f7?text=Gacha+1" alt="Gacha" class="row__img">
+                        </div>
+                        <div class="row__img-wrapper">
+                            <img src="https://via.placeholder.com/400x500/122646/a3d5f7?text=Gacha+2" alt="Gacha" class="row__img">
+                        </div>
+                    </div>
+                    <div class="row__text">
+                        <h2 class="row__title">Gacha Models</h2>
+                        <p class="row__desc">Custom Gacha models with high details. I can make your OC real or create a completely new character for you. Mega render available.</p>
+                    </div>
+                </div>
+
+                <!-- РЯД 2: Текст слева, Фото справа -->
+                <div class="row row--reverse fade-in" data-category="telegram">
+                    <div class="row__images">
+                        <div class="row__img-wrapper">
+                            <img src="https://via.placeholder.com/500x300/122646/a3d5f7?text=Telegram+Bio" alt="Bio" class="row__img">
+                        </div>
+                        <div class="row__img-wrapper">
+                            <img src="https://via.placeholder.com/500x300/122646/a3d5f7?text=Stickers" alt="Stickers" class="row__img">
+                        </div>
+                    </div>
+                    <div class="row__text">
+                        <h2 class="row__title">Telegram Designs</h2>
+                        <p class="row__desc">Aesthetic bios, channel banners, and custom sticker packs. Make your profile stand out with a unique dark vibe.</p>
+                    </div>
+                </div>
+
+                <!-- РЯД 3: Фото слева, Текст справа -->
+                <div class="row fade-in" data-category="art">
+                    <div class="row__images">
+                        <div class="row__img-wrapper">
+                            <img src="https://via.placeholder.com/400x500/122646/a3d5f7?text=Art+1" alt="Art" class="row__img">
+                        </div>
+                        <div class="row__img-wrapper">
+                            <img src="https://via.placeholder.com/400x500/122646/a3d5f7?text=Art+2" alt="Art" class="row__img">
+                        </div>
+                    </div>
+                    <div class="row__text">
+                        <h2 class="row__title">Digital Art</h2>
+                        <p class="row__desc">Full body, half body, or chibi arts. I can also redesign your old OC and give them a fresh, cool look.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- БЛОК СВЯЗИ -->
+        <section class="contact fade-in">
+            <h2 class="contact__title">Ready to order?</h2>
+            <p class="contact__text">DM me on Telegram to discuss your idea!</p>
+            <a href="https://t.me/misssXD" target="_blank" class="contact__button">Message me on TG</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© 2026 misssXD. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
