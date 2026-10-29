@@ -16,6 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
         themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
     });
 
+    // Бургер меню
+    const burgerBtn = document.getElementById('burger');
+    const navMenu = document.getElementById('nav-menu');
+
+    burgerBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Фильтрация
     const filterButtons = document.querySelectorAll('.header__link');
     const portfolioRows = document.querySelectorAll('.row'); 
 
@@ -33,9 +42,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     row.classList.add('hidden'); 
                 }
             });
+
+            // Закрываем меню на телефоне после выбора
+            if (window.innerWidth <= 900) {
+                navMenu.classList.remove('active');
+            }
         });
     });
 
+    // Анимация при скролле
     const faders = document.querySelectorAll('.fade-in');
     const appearOptions = { threshold: 0.1 };
     
@@ -49,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     faders.forEach(fader => { appearOnScroll.observe(fader); });
 
+    // Лайтбокс (Просмотр картинок)
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     const closeBtn = document.getElementById('lightbox-close');
