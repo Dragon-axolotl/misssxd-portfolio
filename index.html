@@ -17,7 +17,15 @@
     <header class="header">
         <div class="header__container">
             <a href="#" class="header__logo">misssXD</a>
-            <nav class="header__nav">
+            
+            <!-- Кнопка бургер для мобильных -->
+            <button class="burger" id="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+
+            <nav class="header__nav" id="nav-menu">
                 <ul class="header__list" id="filter-list">
                     <li class="header__item"><button class="header__link active" data-filter="all">All</button></li>
                     <li class="header__item"><button class="header__link" data-filter="premium">Premium Art</button></li>
@@ -27,6 +35,7 @@
                     <li class="header__item"><button class="header__link" data-filter="watermark">Watermarks</button></li>
                 </ul>
             </nav>
+
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
                 <span class="theme-toggle__icon">🌙</span>
             </button>
@@ -170,7 +179,7 @@
             </div>
         </section>
 
-        <!-- БЛОК С ЦЕНАМИ И КНОПКАМИ -->
+        <!-- БЛОК С ЦЕНАМИ -->
         <section class="prices fade-in">
             <h2 class="prices__title">My Services</h2>
             <div class="prices__card">
@@ -178,24 +187,24 @@
                     <h3 class="price-category__title">Art & Gacha</h3>
                     <ul class="price-list">
                         <li class="price-item"><span class="price-item__name">Chibi</span><span class="price-item__dots"></span><span class="price-item__value">50 ⭐</span></li>
+                        <li class="price-item"><span class="price-item__name">Art Processing (Gacha Edits)</span><span class="price-item__dots"></span><span class="price-item__value">65 ⭐</span></li>
                         <li class="price-item"><span class="price-item__name">Headshot</span><span class="price-item__dots"></span><span class="price-item__value">80 ⭐</span></li>
                         <li class="price-item"><span class="price-item__name">Bust</span><span class="price-item__dots"></span><span class="price-item__value">120 ⭐</span></li>
-                        <li class="price-item"><span class="price-item__name">Full body</span><span class="price-item__dots"></span><span class="price-item__value">250 ⭐</span></li>
-                        <li class="price-item price-item--highlight"><span class="price-item__name">Premium Art</span><span class="price-item__dots"></span><span class="price-item__value">1000 ⭐</span></li>
-                        <li class="price-item"><span class="price-item__name">Model</span><span class="price-item__dots"></span><span class="price-item__value">165 ⭐</span></li>
-                        <li class="price-item"><span class="price-item__name">Model (Mega Render)</span><span class="price-item__dots"></span><span class="price-item__value">265 ⭐</span></li>
                         <li class="price-item"><span class="price-item__name">Redesign</span><span class="price-item__dots"></span><span class="price-item__value">125 ⭐</span></li>
-                        <li class="price-item"><span class="price-item__name">Gacha Edits</span><span class="price-item__dots"></span><span class="price-item__value">50 ⭐</span></li>
+                        <li class="price-item"><span class="price-item__name">Model</span><span class="price-item__dots"></span><span class="price-item__value">165 ⭐</span></li>
+                        <li class="price-item"><span class="price-item__name">Full body</span><span class="price-item__dots"></span><span class="price-item__value">250 ⭐</span></li>
+                        <li class="price-item"><span class="price-item__name">Model (Mega Render)</span><span class="price-item__dots"></span><span class="price-item__value">265 ⭐</span></li>
                         <li class="price-item"><span class="price-item__name">Animation</span><span class="price-item__dots"></span><span class="price-item__value">from 100 ⭐</span></li>
                         <li class="price-item"><span class="price-item__name">Reference Sheet</span><span class="price-item__dots"></span><span class="price-item__value">150 ⭐</span></li>
                         <li class="price-item"><span class="price-item__name">OC Lore</span><span class="price-item__dots"></span><span class="price-item__value">25 ⭐</span></li>
+                        <li class="price-item price-item--highlight"><span class="price-item__name">Premium Art</span><span class="price-item__dots"></span><span class="price-item__value">1500 ⭐</span></li>
                     </ul>
                 </div>
 
                 <div class="price-category">
                     <h3 class="price-category__title">Telegram</h3>
                     <ul class="price-list">
-                        <li class="price-item"><span class="price-item__name">Bio</span><span class="price-item__dots"></span><span class="price-item__value">15 ⭐</span></li>
+                        <li class="price-item"><span class="price-item__name">Bio</span><span class="price-item__dots"></span><span class="price-item__value">30 ⭐</span></li>
                         <li class="price-item"><span class="price-item__name">Watermark</span><span class="price-item__dots"></span><span class="price-item__value">25 ⭐</span></li>
                         <li class="price-item"><span class="price-item__name">PFP / Avatar</span><span class="price-item__dots"></span><span class="price-item__value">80 ⭐</span></li>
                         <li class="price-item"><span class="price-item__name">Channel Banner</span><span class="price-item__dots"></span><span class="price-item__value">40 ⭐</span></li>
@@ -218,7 +227,6 @@
                 <div class="price-footer">
                     <p>★ Payment first always! ★</p>
                     <p>Wait time: 1-3 weeks</p>
-                    
                     <div class="price-footer__buttons">
                         <a href="https://t.me/misssXD" target="_blank" class="contact__button">Message me on TG</a>
                         <a href="https://t.me/reviews_misssXD" target="_blank" class="contact__button contact__button--secondary">Read my Reviews</a>
